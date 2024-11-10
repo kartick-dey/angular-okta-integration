@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'okta-integration-poc'`, () => {
+  it(`should have as title 'angular-okta-integration'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('okta-integration-poc');
+    expect(app.title).toEqual('angular-okta-integration');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('okta-integration-poc app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-okta-integration app is running!');
   });
 });
